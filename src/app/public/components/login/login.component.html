@@ -1,0 +1,81 @@
+<form
+  class="form-box"
+  [formGroup]="formGroup"
+  autocomplete="off"
+  (ngSubmit)="onSubmit(formGroup)">
+
+  <p-button
+    class="btn-store"
+    severity="success"
+    pRipple
+    [text]="true"
+    label="Store"
+    icon="pi pi-chevron-left"
+    (click)="navigate('products')"/>
+
+  <div class="title-form">
+    <div>
+      <img width="150" src="assets/images/footprints.svg">
+    </div>
+    <span>Enter your credentials</span>
+  </div>
+
+  <div>
+    <p-inputGroup>
+      <p-inputGroupAddon>
+        <i class="pi pi-user"></i>
+      </p-inputGroupAddon>
+      <input
+        formControlName="username"
+        pInputText
+        placeholder="Username"
+        autocomplete="off"
+        aria-describedby="username-help"/>
+    </p-inputGroup>
+    <small style="color: red;" *ngIf="formGroup.get('username')?.dirty && formGroup.get('username')?.invalid" id="username-help">
+      Enter your username.
+    </small>
+  </div>
+  <div>
+    <p-inputGroup>
+      <p-inputGroupAddon>
+          <i class="pi pi-lock"></i>
+      </p-inputGroupAddon>
+      <p-password
+        class="password-input"
+        [style]="{width: '100%'}"
+        autocomplete="new-password"
+        formControlName="password"
+        placeholder="Password"
+        [toggleMask]="true"
+        [feedback]="false">
+      </p-password>
+    </p-inputGroup>
+    <small style="color: red;" *ngIf="formGroup.get('password')?.dirty && formGroup.get('password')?.invalid" id="password-help">
+      Enter your password.
+    </small>
+
+    <p-toast position="bottom-right" key="br"/>
+  </div>
+
+  <span class="forgot-password">¿Forgot your password?</span>
+
+  <button
+      pButton
+      pRipple
+      label="Enter"
+      type="submit"
+      class="p-button-success">
+  </button>
+  <button
+      pButton
+      pRipple
+      type="button"
+      [outlined]="true"
+      severity="secondary"
+      label="Register"
+      (click)="navigate('register')"
+      class="p-button-success">
+  </button>
+
+</form>

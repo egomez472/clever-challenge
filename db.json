@@ -1,0 +1,289 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Royal Canin Gastroinstestinal Felineeee",
+      "description": "Alimento especializado para gatos con problemas gastrointestinales.",
+      "image": "https://cdn.royalcanin-weshare-online.io/JVaSf4YBBKJuub5qmPdL/v23/ar-l-gastrointestinal-feline-seco-vhn-01",
+      "withoutImage": false,
+      "price": 3200.65,
+      "quantity": 24,
+      "inventoryStatus": "INSTOCK",
+      "rating": 4.5
+    },
+    {
+      "id": "2",
+      "name": "Cat Chow Gatitos Econopack 2 Kg",
+      "description": "Alimento balanceado para gatitos en crecimiento.",
+      "image": "https://laholandapets.com/wp-content/uploads/2023/07/650_1_478214.jpg",
+      "withoutImage": false,
+      "price": 9500,
+      "quantity": 24,
+      "inventoryStatus": "INSTOCK",
+      "rating": 2.5
+    },
+    {
+      "id": "3",
+      "name": "Juguete resistente para perros",
+      "description": "Juguete resistente para perros que ayuda a aliviar el aburrimiento.",
+      "image": "https://http2.mlstatic.com/D_NQ_NP_606854-MLA53680508624_022023-O.webp",
+      "withoutImage": false,
+      "price": 5000,
+      "quantity": 50,
+      "inventoryStatus": "INSTOCK",
+      "rating": 4.8
+    },
+    {
+      "id": "4",
+      "name": "Purina Pro Plan Cachorros",
+      "description": "Alimento especializado para el desarrollo de cachorros.",
+      "image": "https://catycanar.vtexassets.com/arquivos/ids/155490/401.jpg?v=637732963827200000",
+      "withoutImage": false,
+      "price": 18000,
+      "quantity": 30,
+      "inventoryStatus": "INSTOCK",
+      "rating": 4
+    },
+    {
+      "id": "5",
+      "name": "PetFusion Ultimate Dog Bed",
+      "description": "Cama ortopédica para perros, con espuma de memoria.",
+      "image": "https://image.chewy.com/is/image/catalog/94245_MAIN._AC_SL600_V1566323159_.jpg",
+      "withoutImage": false,
+      "price": 7000,
+      "quantity": 15,
+      "inventoryStatus": "LOWSTOCK",
+      "rating": 3.5
+    },
+    {
+      "id": "6",
+      "name": "Tetra Pond Sticks",
+      "description": "Alimento flotante para peces de estanque.",
+      "image": "https://catycanar.vtexassets.com/arquivos/ids/162779/6695.jpg?v=637786403133830000",
+      "withoutImage": false,
+      "price": 2500,
+      "quantity": 40,
+      "inventoryStatus": "INSTOCK",
+      "rating": 4.5
+    },
+    {
+      "id": "7",
+      "name": "Zee.Dog Nylon Leash",
+      "description": "Correa de nylon resistente para perros.",
+      "image": "https://www.justdogsstore.com/wp-content/uploads/2022/12/Zee-Dog-Army-Green-Leash-1-1.webp",
+      "withoutImage": false,
+      "price": 2500,
+      "quantity": 100,
+      "inventoryStatus": "INSTOCK",
+      "rating": 4.5
+    },
+    {
+      "id": "8",
+      "name": "FURminator deShedding Tool",
+      "description": "Herramienta para eliminar el pelo suelto de perros y gatos.",
+      "image": "https://onestopcountrypetsupply.com/cdn/shop/products/P929173_Gallery_03_CurvedEdge_LoRes_500x500.jpg?v=1694073285",
+      "withoutImage": false,
+      "price": 3500,
+      "quantity": 25,
+      "inventoryStatus": "INSTOCK",
+      "rating": 4.5
+    },
+    {
+      "id": "9",
+      "name": "Blue Buffalo Wilderness High Protein",
+      "description": "Alimento para perros ricos en proteínas, ideal para mascotas activas.",
+      "image": "https://m.media-amazon.com/images/I/81e9jvoDbWL.jpg",
+      "withoutImage": false,
+      "price": 28000,
+      "quantity": 20,
+      "inventoryStatus": "INSTOCK",
+      "rating": 4
+    },
+    {
+      "id": "10",
+      "name": "Nutrience SubZero Gatos",
+      "description": "Alimento congelado para gatos, con ingredientes naturales.",
+      "image": "https://http2.mlstatic.com/D_Q_NP_647852-MLU70117858960_062023-O.webp",
+      "withoutImage": false,
+      "price": 24000,
+      "quantity": 15,
+      "inventoryStatus": "LOWSTOCK",
+      "rating": 4
+    },
+    {
+      "id": "11",
+      "name": "K&H Pet Products Self-Warming Pet Bed",
+      "description": "Cama auto-calentada para mascotas, ideal para climas fríos.",
+      "image": "https://khpet.com/cdn/shop/products/KH-PetBed-Hero_512x512.jpg?v=1665767895",
+      "withoutImage": false,
+      "price": 8500,
+      "quantity": 10,
+      "inventoryStatus": "INSTOCK",
+      "rating": 3.5
+    },
+    {
+      "id": "12",
+      "name": "Greenies Dental Treats",
+      "description": "Premios dentales para perros, que ayudan a limpiar los dientes.",
+      "image": "https://www.greenies.com/cdn/shop/files/2023-09-21_31d01685-e2b4-49d4-b837-d9d3631f1b7e.webp?v=1695333888&width=1445",
+      "withoutImage": false,
+      "price": 3000,
+      "quantity": 60,
+      "inventoryStatus": "INSTOCK",
+      "rating": 5
+    },
+    {
+      "id": "13",
+      "name": "KONG Stuff'n Easy Treat",
+      "description": "Relleno para juguetes KONG, ideal para entretener a los perros.",
+      "image": "https://image.chewy.com/is/image/catalog/654390_MAIN._AC_SL600_V1665524793_.jpg",
+      "withoutImage": false,
+      "price": 2800,
+      "quantity": 80,
+      "inventoryStatus": "INSTOCK",
+      "rating": 5
+    },
+    {
+      "id": "14",
+      "name": "Oxbow Western Timothy Hay",
+      "description": "Heno de alta calidad para roedores y conejos.",
+      "image": "https://rabbits.world/wp-content/uploads/2019/05/elvis-et-foin-Oxbow.jpg",
+      "withoutImage": false,
+      "price": 4000.32,
+      "quantity": 50,
+      "inventoryStatus": "INSTOCK",
+      "rating": 4.5
+    },
+    {
+      "id": "15",
+      "name": "PetSafe Drinkwell Water Fountain",
+      "description": "Fuente de agua para gatos y perros, con filtro.",
+      "image": "https://m.media-amazon.com/images/I/61IlhFOCiyL.jpg",
+      "withoutImage": false,
+      "price": 12500.65,
+      "quantity": 12,
+      "inventoryStatus": "LOWSTOCK",
+      "rating": 4.6
+    },
+    {
+      "id": "5805",
+      "name": "Pelota Para Perros Chuckit! Ultra Ball Large Resistente",
+      "description": "Pelota para jugar con el perro",
+      "image": "https://http2.mlstatic.com/D_NQ_NP_694014-MLA71861528599_092023-O.webp",
+      "withoutImage": false,
+      "price": 2000,
+      "quantity": 5,
+      "inventoryStatus": "LOWSTOCK",
+      "rating": 3
+    },
+    {
+      "id": "7faf",
+      "name": "Felix premio para gatos",
+      "description": "Premio para gatos de 3 a 6 meses",
+      "image": "https://fundacionluca.org.mx/wp-content/uploads/Felix-Travesuras-Ocean-Mix-Sna-1.jpg",
+      "withoutImage": false,
+      "price": 250,
+      "quantity": 15,
+      "inventoryStatus": "INSTOCK",
+      "rating": 3
+    },
+    {
+      "id": "d251",
+      "name": "Nuevo Producto",
+      "description": "nuevo producto",
+      "image": "https://www.shutterstock.com/image-vector/image-icon-600nw-211642900.jpg",
+      "withoutImage": true,
+      "price": 0,
+      "quantity": 1,
+      "inventoryStatus": "INSTOCK",
+      "rating": 3
+    }
+  ],
+  "users": [
+    {
+      "id": "f1a2",
+      "username": "EricGomez24",
+      "firstname": "Eric",
+      "lastname": "Gomez",
+      "email": "eric.gomez.unq@gmail.com",
+      "password": "Demo123!",
+      "rol": "ADMIN",
+      "cart": []
+    },
+    {
+      "id": "bcb5",
+      "username": "Lula",
+      "firstname": "Luana",
+      "lastname": "Alzogaray",
+      "email": "lula@gmail.com",
+      "password": "Demo123!",
+      "rol": "USER",
+      "cart": [
+        {
+          "id": "4",
+          "name": "Purina Pro Plan Cachorros",
+          "description": "Alimento especializado para el desarrollo de cachorros.",
+          "image": "https://catycanar.vtexassets.com/arquivos/ids/155490/401.jpg?v=637732963827200000",
+          "withoutImage": false,
+          "price": 18000,
+          "quantity": 30,
+          "inventoryStatus": "INSTOCK",
+          "rating": 4
+        },
+        {
+          "id": "3",
+          "name": "Juguete resistente para perros",
+          "description": "Juguete resistente para perros que ayuda a aliviar el aburrimiento.",
+          "image": "https://http2.mlstatic.com/D_NQ_NP_606854-MLA53680508624_022023-O.webp",
+          "withoutImage": false,
+          "price": 5000,
+          "quantity": 50,
+          "inventoryStatus": "INSTOCK",
+          "rating": 4.8
+        },
+        {
+          "id": "2",
+          "name": "Cat Chow Gatitos Econopack 2 Kg",
+          "description": "Alimento balanceado para gatitos en crecimiento.",
+          "image": "https://laholandapets.com/wp-content/uploads/2023/07/650_1_478214.jpg",
+          "withoutImage": false,
+          "price": 9500,
+          "quantity": 24,
+          "inventoryStatus": "INSTOCK",
+          "rating": 2.5
+        },
+        {
+          "id": "1",
+          "name": "Royal Canin Gastroinstestinal Felineeee",
+          "description": "Alimento especializado para gatos con problemas gastrointestinales.",
+          "image": "https://cdn.royalcanin-weshare-online.io/JVaSf4YBBKJuub5qmPdL/v23/ar-l-gastrointestinal-feline-seco-vhn-01",
+          "withoutImage": false,
+          "price": 3200.65,
+          "quantity": 24,
+          "inventoryStatus": "INSTOCK",
+          "rating": 4.5
+        }
+      ]
+    },
+    {
+      "id": "9def",
+      "username": "MateC",
+      "firstname": "Mateo",
+      "lastname": "Canteros",
+      "email": "mateo@gmail.com",
+      "password": "Demo123!",
+      "rol": "USER",
+      "cart": []
+    },
+    {
+      "id": "ec3b",
+      "username": "pepe",
+      "firstname": "Pedro",
+      "lastname": "Gonzalez",
+      "email": "pedro@gmail.com",
+      "password": "Demo123!",
+      "rol": "USER",
+      "cart": []
+    }
+  ]
+}

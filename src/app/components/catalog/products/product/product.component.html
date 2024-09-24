@@ -1,0 +1,31 @@
+<p-card (click)="viewProductDetail(product)" styleClass="product" [style]="{heigth: '400px', padding: '0.3rem', cursor: 'pointer', display: 'flex', flexDirection: 'column'}">
+  <ng-template pTemplate="header">
+    <p-button (click)="goToEditProduct(product); $event.stopPropagation()" type="button" class="button-edit" [style]="{position: 'absolute'}" *hasRole="['ADMIN']" [rounded]="true" icon="pi pi-pencil" />
+    <p-tag [value]="product.inventoryStatus" [rounded]="true" [severity]="getSeverity(product)" class="absolute" [style.left.px]="120" [style.top.px]="4" />
+    <div class="product-image-container">
+      <img alt="{{product.name}}" src="{{product.image}}" />
+    </div>
+    <div  class="product-title">
+      <span>{{product.name}}</span>
+    </div>
+  </ng-template>
+  <div class="price">
+    <div>
+      <p-rating [ngModel]="getRating(product)" [readonly]="true" stars="5" [cancel]="false" />
+    </div>
+    <span>{{formatCurrency(product.price)}}</span>
+  </div>
+  <ng-template pTemplate="footer">
+    <button
+      pButton
+      pRipple
+      label="Buy"
+      style="width: 100%;"
+      (click)="$event.stopPropagation()"
+      class="p-button-success">
+    </button>
+    <p-toast position="bottom-right" key="br"/>
+    <p-button (click)="addProductToCart(product); $event.stopPropagation()" icon="pi pi-cart-plus" severity="info" />
+  </ng-template>
+
+</p-card>

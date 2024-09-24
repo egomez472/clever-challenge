@@ -1,0 +1,30 @@
+.auth-box {
+  height: 100%;
+  background-image: url('../../../../assets/images/background.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  @media(max-width: 998px) {
+    display: flex;
+    justify-content: center;
+    .banner {
+      display: none;
+    }
+  }
+
+  .banner {
+    position: absolute;
+    top: 50%;
+    right: 130px;
+    font-size: 60px;
+    font-weight: bold;
+    color: #0d6f31;
+
+    @media(min-width:1520px) {
+      font-size: 100px;
+    }
+    @media(max-width:1070px) {
+      right: 10%;
+    }
+  }
+}
+

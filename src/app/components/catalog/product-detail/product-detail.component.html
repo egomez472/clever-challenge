@@ -1,0 +1,32 @@
+<div class="product-container">
+  @if(product) {
+    <div class="product-box">
+      <div class="image">
+        <img width="400px" [src]="product.image" alt="">
+      </div>
+      <div class="product-info-box">
+        <div class="name">
+          <span>{{product.name}}</span>
+        </div>
+        <div class="rating">
+          <p-rating [ngModel]="getRating(product)" [readonly]="true" stars="5" [cancel]="false" />
+        </div>
+        <div class="description-box">
+          <span class="description-title">Product description:</span><br>
+          <span class="description">{{product.description}}</span>
+        </div>
+        <div class="quantity">
+          <span>Quantity available:</span>
+          <span>{{product.quantity}}</span>
+        </div>
+        <div class="quantity" style="align-items: center;">
+          <span>Stock status:</span>
+          <p-tag [value]="product.inventoryStatus" [rounded]="true" [severity]="getSeverity(product)"/>
+        </div>
+        <div class="price">
+          <button pButton pRipple severity="success">Buy {{formatCurrency(product.price)}}</button>
+        </div>
+      </div>
+    </div>
+  }
+</div>
