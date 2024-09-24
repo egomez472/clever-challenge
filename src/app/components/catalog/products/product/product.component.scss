@@ -1,0 +1,87 @@
+.p-card-body {
+  padding: 0.5rem;
+  margin-top: auto;
+}
+
+.p-card-content {
+  padding: 0.5rem;
+
+  .price {
+    font-size: 17px;
+    font-weight: 600;
+    text-align: end;
+  }
+}
+
+p-tag.p-element.absolute {
+  position: relative;
+  left: 120px;
+  top: 4px;
+  .p-card-footer {
+    padding: 0.5rem;
+    display: flex;
+    gap: 0.5rem;
+  }
+}
+
+.p-card-footer {
+  padding: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+span.p-tag {
+  font-size: 8px;
+}
+
+.button-edit {
+  height: 0px;
+  display: flex;
+  top: -1rem;
+  left: 11rem;
+
+  button {
+    padding: 0px;
+    height: 30px;
+    width: 30px;
+
+    span {
+      font-size: 14px;
+    }
+  }
+}
+
+.product-image-container {
+  display: flex;
+  justify-content: center;
+
+  img {
+    width: fit-content;
+    max-height: 190px;
+  }
+}
+
+.product.p-card.p-component {
+  border-radius: 0px;
+  box-shadow: none;
+  border: 1px solid #d3d3d38f;
+  min-height: 420px;
+  transition: 0.3s;
+
+  &:hover {
+    transition: 0.3s;
+    box-shadow: 0px 0px 20px -10px grey;
+  }
+}
+
+.product-title {
+  font-size: 13px;
+  font-weight: 600;
+  padding: 0.5rem 0;
+  max-height: 50px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

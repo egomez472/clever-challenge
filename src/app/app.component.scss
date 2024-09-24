@@ -1,0 +1,57 @@
+
+.list-items {
+  background-color: red;
+}
+
+.username {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid #d7d7d7;
+  padding: 0.2rem 0.4rem;
+  border-radius: 8px;
+
+  &:hover {
+    background-color: #8080801f;
+  }
+}
+
+.cart-box {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #d7d7d7;
+  border-radius: 8px;
+  gap: 0.4rem;
+
+  span {
+    position: relative;
+    left: 10px;
+  }
+
+  p-tag.p-element {
+    position: relative;
+    top: -6px;
+    right: 3px;
+  }
+
+  &:hover {
+    background-color: #8080801f;
+  }
+}
+
+.access {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #d7d7d7;
+  border-radius: 8px;
+
+  &:hover {
+    background-color: #8080801f;
+  }
+}

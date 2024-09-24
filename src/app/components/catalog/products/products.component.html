@@ -1,0 +1,20 @@
+@if((productList() ?? []).length > 0) {
+  <div class="products-container">
+    @for(product of productList(); track product.id) {
+      <app-product [product]="product"></app-product>
+    }
+  </div>
+} @else {
+  <div class="not-products-container">
+    <p class="not-products">There are no products to show yet</p>
+    <button
+      pButton
+      *hasRole="['ADMIN']"
+      pRipple
+      label="Add products"
+      style="width: 100%;"
+      icon="pi pi-plus-circle"
+      class="p-button-success">
+    </button>
+  </div>
+}

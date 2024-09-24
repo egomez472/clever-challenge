@@ -1,0 +1,197 @@
+<form
+  class="form-box"
+  [formGroup]="formGroup"
+  autocomplete="off"
+  (ngSubmit)="onSubmit(formGroup)">
+
+  <p-button
+    class="btn-store"
+    severity="success"
+    pRipple
+    [text]="true"
+    label="Store"
+    icon="pi pi-chevron-left"
+    (click)="navigate('products')"/>
+
+  <div class="title-form">
+    <div>
+      <img width="150" src="assets/images/footprints.svg">
+    </div>
+    <span>Enter your credentials</span>
+  </div>
+
+  <div class="user-info-box">
+    <div>
+      <p-inputGroup>
+        <p-inputGroupAddon>
+          <i class="pi pi-id-card"></i>
+        </p-inputGroupAddon>
+        <input
+          formControlName="firstname"
+          pInputText
+          placeholder="Firstname"
+          autocomplete="off"
+          aria-describedby="username-help"/>
+      </p-inputGroup>
+      @switch (getErrorType(firstnameControl)) {
+        @case ('required') {
+          <small style="color: red;" id="password-help">
+            Enter your firstname.
+          </small>
+        }
+      }
+    </div>
+
+    <div>
+      <p-inputGroup>
+        <p-inputGroupAddon>
+          <i class="pi pi-id-card"></i>
+        </p-inputGroupAddon>
+        <input
+          formControlName="lastname"
+          pInputText
+          placeholder="Lastname"
+          autocomplete="off"
+          aria-describedby="username-help"/>
+      </p-inputGroup>
+      @switch (getErrorType(lastnameControl)) {
+        @case ('required') {
+          <small style="color: red;" id="password-help">
+            Enter your lastname.
+          </small>
+        }
+      }
+    </div>
+  </div>
+
+  <div>
+    <p-inputGroup>
+      <p-inputGroupAddon>
+        <i class="pi pi-user"></i>
+      </p-inputGroupAddon>
+      <input
+        formControlName="username"
+        pInputText
+        placeholder="Username"
+        autocomplete="off"
+        aria-describedby="username-help"/>
+    </p-inputGroup>
+    @switch (getErrorType(usernameControl)) {
+      @case ('required') {
+        <small style="color: red;" id="password-help">
+          Enter your username.
+        </small>
+      }
+      @case('minlength') {
+        <small style="color: red;" id="password-help">
+          Must contain a minimum of 8 characters
+        </small>
+      }
+    }
+  </div>
+
+  <div>
+    <p-inputGroup>
+      <p-inputGroupAddon>
+        <i class="pi pi-envelope"></i>
+      </p-inputGroupAddon>
+      <input
+        formControlName="email"
+        pInputText
+        placeholder="Email"
+        autocomplete="off"
+        aria-describedby="username-help"/>
+    </p-inputGroup>
+    @switch (getErrorType(emailControl)) {
+      @case ('required') {
+        <small style="color: red;" id="password-help">
+          Enter your email.
+        </small>
+      }
+      @case('pattern') {
+        <small style="color: red;" id="password-help">
+          Email invalid.
+        </small>
+      }
+    }
+  </div>
+
+  <div class="user-info-box">
+    <div>
+      <p-inputGroup>
+        <p-inputGroupAddon>
+            <i class="pi pi-lock"></i>
+        </p-inputGroupAddon>
+        <p-password
+          class="password-input"
+          [style]="{width: '100%'}"
+          autocomplete="new-password"
+          formControlName="password"
+          placeholder="Password"
+          promptLabel="Invalid"
+          [toggleMask]="true">
+        </p-password>
+      </p-inputGroup>
+      @switch (getErrorType(passwordControl)) {
+        @case ('required') {
+          <small style="color: red;" id="password-help">
+            Enter your password.
+          </small>
+        }
+        @case('pattern') {
+          <small style="color: red;" id="password-help">
+            Password invalid.
+          </small>
+        }
+      }
+      <p-toast position="bottom-right" key="br"/>
+    </div>
+
+    <div>
+      <p-inputGroup>
+        <p-inputGroupAddon>
+            <i class="pi pi-lock"></i>
+        </p-inputGroupAddon>
+        <p-password
+          class="password-input"
+          [style]="{width: '100%'}"
+          autocomplete="new-password"
+          formControlName="password_confirm"
+          placeholder="Password"
+          [toggleMask]="true"
+          [feedback]="false">
+        </p-password>
+      </p-inputGroup>
+      @switch (getErrorType(passwordConfirmControl)) {
+        @case ('required') {
+          <small style="color: red;" id="password-help">
+            Enter your password.
+          </small>
+        }
+        @case('pattern'){
+          <small style="color: red;" id="password-help">
+            Password invalid.
+          </small>
+        }
+        @case('notSame') {
+          <small style="color: red;" id="password-help">
+            The password is not the same
+          </small>
+        }
+      }
+      <p-toast position="bottom-right" key="br"/>
+    </div>
+  </div>
+
+  <span (click)="navigate('login')" class="forgot-password">I already have an account</span>
+
+  <button
+      pButton
+      pRipple
+      label="Register"
+      type="submit"
+      class="button-submit p-button-success"
+      [disabled]="formGroup.invalid">
+  </button>
+
+</form>

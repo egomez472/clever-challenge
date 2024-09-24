@@ -1,1 +1,42 @@
-<router-outlet/>
+@if(routerState() !== '/login' && routerState() !== '/register') {
+  <p-menubar [model]="items">
+    <ng-template pTemplate="item" let-item let-root="root">
+      <a
+        *hasRole="item.label == 'Add product' ? ['ADMIN'] : ['ADMIN','USER', 'GUEST']"
+        pRipple
+        class="flex align-items-center p-menuitem-link" style="gap: 0.2rem;">
+        <span [class]="item.icon"></span>
+        <span class="ml-2">{{ item.label }}</span>
+      </a>
+    </ng-template>
+    <ng-template pTemplate="end">
+      <div style="display: flex; align-items: center; gap: 1rem;">
+        <a (click)="navigate('cart')" pRipple class="flex align-items-center p-menuitem-link" style="gap: 0.2rem;">
+          <div class="cart-box">
+            <span class="pi pi-shopping-cart"></span>
+            <p-tag [style]="{fontSize: '6px', display:'flex'}" [value]="cartStore.cartItems().length.toString()" [rounded]="true"/>
+          </div>
+        </a>
+        <a pRipple class="flex align-items-center p-menuitem-link" style="gap: 1rem;">
+          <div class="username">
+            <span>{{userStore.user() ? userStore.user()?.username : 'Guest'}}</span>
+            <p-avatar image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png" shape="circle" />
+          </div>
+          @if(userStore.user()?.rol !== 'GUEST') {
+            <div class="access" *hasRole="['ADMIN','USER']" (click)="logout($event)">
+              <span class="pi pi-sign-out"></span>
+            </div>
+          } @else {
+            <div class="access" *hasRole="['GUEST']" (click)="signIn()">
+              <span class="pi pi-sign-in"></span>
+            </div>
+          }
+        </a>
+      </div>
+    </ng-template>
+  </p-menubar>
+  <p-toast position="bottom-right" key="br"/>
+  <p-confirmDialog />
+}
+
+<router-outlet></router-outlet>

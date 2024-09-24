@@ -1,0 +1,40 @@
+<div class="cart-container">
+  <div class="item-box">
+    @for (prod of cartStore.cartItems(); track prod.id) {
+      <div class="item-container">
+        <div class="img-container">
+          <img width="190px" src="{{prod.image}}" alt="{{prod.name}}"><br>
+        </div>
+        <div class="product-info">
+          <span class="item-title">{{prod.name}}</span><br>
+          <span class="item-description">{{prod.description}}</span><br>
+          <span class="item-price">{{formatCurrency(prod.price)}}</span>
+        </div>
+        <div class="button-remove">
+          <p-button severity="success" (click)="removeItemFromCart($event, prod)" type="button" [rounded]="true" icon="pi pi-cart-minus" />
+        </div>
+      </div>
+    }
+  </div>
+
+  <div class="total-items-box">
+    <div>
+      <div class="products">
+        <span class="products-title">Products in cart</span>
+        <div></div>
+        <span>{{cartStore.cartItems().length}}</span>
+      </div>
+      <br>
+      <div class="products">
+        <span class="products-title">Total</span>
+        <div></div>
+        <span class="item-price">{{evaluatePrice(cartStore.cartItems())}}</span>
+      </div>
+      <br>
+      <button (click)="clearCart($event)" [style]="{width: '100%', gap: '1rem'}" pButton severity="success" icon="pi pi-eraser">Clear cart</button>
+    </div>
+  </div>
+
+  <p-toast position="bottom-right" key="br"/>
+  <p-confirmDialog />
+</div>

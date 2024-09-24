@@ -1,0 +1,77 @@
+<div class="container">
+  <form class="form-box" [formGroup]="formGroup" (ngSubmit)="onSubmit($event, formGroup, action)">
+    <span class="title-page">{{action && action.charAt(0).toUpperCase() + action.slice(1)}} product</span>
+
+    <p-floatLabel>
+      <input [style]="{width: '100%'}" type="text" id="name" pInputText formControlName="name" placeholder="Name">
+      <label for="name">Name</label>
+    </p-floatLabel>
+
+    <p-floatLabel>
+      <input [style]="{width: '100%'}" type="text" id="description" pInputText formControlName="description" placeholder="Description">
+      <label for="description">Description</label>
+    </p-floatLabel>
+
+    <div class="img-inputs">
+      <p-floatLabel>
+        <input [style]="{width: '100%'}" type="text" pInputText formControlName="image" placeholder="Url image">
+        <label for="image">Image url</label>
+
+      </p-floatLabel>
+
+      <div style="display: flex;gap: 0.5rem;align-items: center;">
+        <p-checkbox
+              formControlName="defaultCheck"
+              value="https://www.shutterstock.com/image-vector/image-icon-600nw-211642900.jpg"
+              inputId="ny" />
+        <span style="font-size: 12px;color: #6b7280;">Without image</span>
+      </div>
+    </div>
+
+    <p-floatLabel>
+      <p-inputNumber
+        class="input-number"
+        [style]="{width: '100%'}"
+        formControlName="price"
+        inputId="minmaxfraction"
+        mode="decimal"
+        id="price"
+        [minFractionDigits]="2"
+        [maxFractionDigits]="2"
+      />
+      <label for="price">Price</label>
+    </p-floatLabel>
+
+    <p-floatLabel>
+      <p-inputNumber
+        class="input-number"
+        [style]="{width: '100%'}"
+        formControlName="quantity"
+        inputId="minmax"
+        id="quantity"
+        mode="decimal"
+        [min]="0"
+        [max]="100"
+      />
+      <label for="quantity">Quantity (max 100)</label>
+    </p-floatLabel>
+
+    <p-floatLabel>
+      <p-dropdown
+        [style]="{width: '100%'}"
+        formControlName="inventory"
+        [options]="inventoryItems"
+        optionLabel="name"
+        id="inventory"
+        (onChange)="onChange($event)"
+        placeholder="Select a stock"
+      />
+      <label for="inventory">Inventory status</label>
+    </p-floatLabel>
+
+    <p-button [disabled]="!formGroup.dirty || formGroup.invalid" type="submit" [style]="{width: '100%'}" severity="success" [label]="'Confirm ' + action"/>
+  </form>
+
+  <p-toast position="bottom-right" key="br"/>
+  <p-confirmDialog />
+</div>

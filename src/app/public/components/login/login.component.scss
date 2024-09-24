@@ -1,0 +1,63 @@
+.form-box {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0 4rem;
+  border: 1px solid #d7d7d7;
+  background-color: white;
+  height: 100%;
+  justify-content: center;
+
+  @media(max-width: 1200px) {
+    max-width: 400px;
+    padding: 1rem;
+  }
+
+  .btn-store {
+    position: relative;
+    top: 0;
+    left: -1rem;
+
+    overflow: unset!important;
+  }
+
+  .title-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    div {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      border-radius: 8px;
+      padding: 0.5rem;
+      max-width: 150px;
+    }
+    span {
+      font-size: 24px;
+      font-weight: 600;
+      color: #22c55e;
+    }
+  }
+
+  .password-input {
+    display: flex;
+
+    input {
+      border-radius: 0px 6px 6px 0px;
+    }
+  }
+
+  .forgot-password {
+    font-size: 14px;
+    text-align: end;
+    color: #22c55e;
+
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+}
